@@ -6,6 +6,7 @@ from src.ext import db, migrate, login_manager, admin, api
 from src.views import  auth_blueprint
 from src.commands import init_db, populate_db
 from src.models.user import User
+from src.models.series import Series
 from src.models.book import Book
 from src.models.faq import FrequentlyAskedQuestion
 import src.admin_views
