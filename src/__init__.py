@@ -42,7 +42,7 @@ def register_extensions(app):
 
     # Flask_admin
     admin.init_app(app)
-    admin.add_view(SecureModelView(Book, db.session, name="Books Default", endpoint="books_default"))
+    admin.add_view(BookView(Book, db.session, name="Books Default", endpoint="books_default"))
     src.admin_views.register_admin_views(admin, db)
 
     #Flask_RestX
